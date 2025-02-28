@@ -5,8 +5,7 @@
 # @example
 #   include apache::install
 class apache::install {
-
-  package { 'httpd':
+  package { "${apache::install_name}":
     ensure => present,
   }
 }
