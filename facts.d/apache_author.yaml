@@ -1,0 +1,8 @@
+---
+  apache_author:
+    organisation: Squidjigg Inc.
+    server: Apache
+    developer: Squidjigg
+    os_family:
+      1: Debian
+      2: Red Hat
