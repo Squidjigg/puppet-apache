@@ -4,7 +4,7 @@
   "description": "Run 'apachectl' through Puppet",
   "parameters": {
     "action": {
-      "description": "Which apachectl command to run"
+      "description": "Which apachectl command to run",
       "type": "Enum[graceful,graceful-stop,start,status,stop]"
     }
   }
