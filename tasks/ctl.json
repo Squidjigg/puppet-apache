@@ -5,7 +5,7 @@
   "parameters": {
     "action": {
       "description": "Which apachectl command to run",
-      "type": "Enum[graceful,graceful-stop,start,status,stop]"
+      "type": "Enum[graceful,graceful-stop,start,restart,status,stop]"
     }
   }
 }
