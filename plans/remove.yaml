@@ -1,0 +1,15 @@
+steps:
+  - task: apache::ctl
+    targets: web002.globomantics.loc
+    description: "Shutdown the apache service"
+    parameters:
+      action: stop
+  - command: "tar -cf apache.tar /var/log/apache2/*"
+    targets: web002.globomantics.loc
+    description: "Preserve the apache logs"
+  - task: package::linux
+    targets: web002.globomantics.loc
+    description: "Remove the apache package"
+    parameters:
+      action: uninstall
+      name: apache2
